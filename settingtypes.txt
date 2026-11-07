@@ -1,0 +1,12 @@
+# Trickster framework
+trickster.enabled (Enable automatic framework processing) bool true
+trickster.diagnostic_log (Write truthful diagnostic audit records) bool true
+trickster.dry_run (Validate plans without applying effects) bool false
+trickster.runtime_interval (Queue processing interval) float 1 0.2 60
+trickster.director_interval (Persona director interval) float 1 0.5 10
+trickster.max_queue (Maximum queued plans) int 64 1 1000
+trickster.max_effects_per_plan (Maximum effects in one plan) int 8 1 32
+trickster.max_node_scan (Maximum nodes inspected by one effect) int 128 1 4096
+trickster.max_inventory_stacks (Maximum stacks moved by one effect) int 4 1 99
+trickster.state_flush_interval (Persistent state flush interval) float 60 10 3600
+trickster.transaction_limit (Maximum unfinished transactions) int 128 1 1000
